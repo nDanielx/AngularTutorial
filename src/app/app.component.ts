@@ -11,6 +11,5 @@ export class AppComponent {
   loadFeature = 'Recipe';
   selectEvent(feature: string) {
     this.loadFeature = feature;
-  
   }
 }
