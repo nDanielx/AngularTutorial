@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Ingredient } from '../shared/ingredient.module';
+import { type } from 'os';
 
 @Component({
   selector: 'app-shopping-list',
@@ -21,4 +22,8 @@ export class ShoppingListComponent implements OnInit {
     this.ingredients.push(ingredient);
   }
 
+  onDeleteIngrdient(ingredient: Ingredient) {
+    this.ingredients.filter(itemName => itemName.name !== ingredient.name);
+    console.log(this.ingredients)
+  }
 }
