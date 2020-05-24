@@ -13,28 +13,35 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav clearfix">
-      <li class="nav-item active">
-        <a class="nav-link" href="#" (click)="onClick('Recipe')">Recipes</a>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="" routerLinkActive="active">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/recipes" routerLinkActive="active"
+          >Recipes</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" (click)="onClick('Shopping-list')"
+        <a class="nav-link" routerLink="/shopping-list" routerLinkActive="active"
           >Shopping List</a
         >
       </li>
-      <li class="nav-item dropdown  float-right">
+
+      <li class="nav-item dropdown float-right">
         <a
           class="nav-link dropdown-toggle"
-          href="#"
           id="navbarDropdownMenuLink"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
+          style="cursor: pointer;"
         >
           Manage
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Save Data</a>
-          <a class="dropdown-item" href="#">Fetch Data</a>
+          <a class="dropdown-item"  style="cursor: pointer;">Save Data</a>
+          <a class="dropdown-item" style="cursor: pointer;">Fetch Data</a>
         </div>
       </li>
     </ul>
